@@ -7,13 +7,22 @@
     <body>
         <script type="text/javascript">
 
+        /* dude from TOP discord shared this approach.
+
+        while (userScore < 5) {
+            if (cpuScore == 5) break;
+            oneRound();
+            console.log(userScore);
+        }
+        */
+
         function game() {
 
         let userScore = 0;
         let cpuScore = 0;
-        
+
         // loop to run game until user or cpu reach 5
-        while (userScore < 5 || cpuScore < 5) {
+        while (userScore < 5 && cpuScore < 5) {
             oneRound();
         }
 
