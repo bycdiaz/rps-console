@@ -101,8 +101,15 @@
             console.log("The computer score is: " + cpuScore + ".");
 
             }
-
+            
+            if (userScore === 5) {
+                return "The human wins!";
+            } else {
+                return "The computer wins!";
+            }
         }
+
+
 
         console.log(game());
 
